@@ -1,0 +1,479 @@
+[
+  {
+    "song": "So What",
+    "artist": "Miles Davis",
+    "album": "Kind of Blue",
+    "year": 1959,
+    "genre": "jazz",
+    "concepts": ["dorian mode", "modal jazz", "minor 7th chords", "AABA form", "drop 2 voicings"],
+    "context": "The entire piece is built on D Dorian for the A section and Eb Dorian for the B section. The iconic 'So What' chord is a drop 2 voicing of a minor 7th. This is the definitive example of modal jazz — harmony that doesn't move by function but by color."
+  },
+  {
+    "song": "Autumn Leaves",
+    "artist": "Standard (Miles Davis / Bill Evans versions recommended)",
+    "album": "",
+    "year": 1945,
+    "genre": "jazz",
+    "concepts": ["ii-V-I", "relative major minor", "circle of fifths", "AABA form", "ii-V-I in minor"],
+    "context": "A textbook example of ii-V-I chains moving through related keys. The first half cycles through G major, the second through G minor. Perfect for hearing ii-V-I in both major and minor contexts back to back."
+  },
+  {
+    "song": "Giant Steps",
+    "artist": "John Coltrane",
+    "album": "Giant Steps",
+    "year": 1960,
+    "genre": "jazz",
+    "concepts": ["Coltrane changes", "tritone substitution", "chromatic harmony", "major 3rd key cycles", "ii-V-I"],
+    "context": "The most harmonically complex standard in the jazz repertoire. The changes cycle through three key centers (B, G, Eb) a major third apart — dividing the octave into three equal parts. Every chord is approached by a ii-V from a tritone away. Terrifying to improvise over, beautiful to analyze."
+  },
+  {
+    "song": "Fly Me to the Moon",
+    "artist": "Frank Sinatra / Various",
+    "album": "",
+    "year": 1954,
+    "genre": "jazz",
+    "concepts": ["tritone substitution", "ii-V-I", "circle of fifths", "chord substitution"],
+    "context": "The bridge contains a beautiful tritone substitution where a Db7 replaces the expected G7, creating a chromatic bass line descending into the tonic. A gentle entry point for hearing tritone subs in a familiar context."
+  },
+  {
+    "song": "All The Things You Are",
+    "artist": "Standard (Charlie Parker, Bill Evans versions recommended)",
+    "album": "",
+    "year": 1939,
+    "genre": "jazz",
+    "concepts": ["ii-V-I", "multiple key centers", "modulation", "chord substitution", "bebop"],
+    "context": "Moves through six key centers in 36 bars. Bebop musicians used it as a vehicle for tritone substitutions and chromatic lines. Learning to navigate 'All The Things' is a rite of passage in jazz. The opening four chords (Fm7-Bb7-Ebmaj7-Abmaj7) are a ii-V-I extended by a IV chord."
+  },
+  {
+    "song": "Misty",
+    "artist": "Erroll Garner / Johnny Mathis",
+    "album": "",
+    "year": 1954,
+    "genre": "jazz",
+    "concepts": ["ii-V-I", "major 7th chords", "bossa nova harmony", "chord voicings"],
+    "context": "One of the most beautiful and accessible jazz standards for hearing ii-V-I in a relaxed context. The opening bars spell out Ebmaj7 then move through a series of ii-V-Is. The melody sits on major 7th intervals — that dreamy, suspended quality is the major 7th chord tone."
+  },
+  {
+    "song": "Stella by Starlight",
+    "artist": "Standard (Bill Evans, Miles Davis versions recommended)",
+    "album": "",
+    "year": 1944,
+    "genre": "jazz",
+    "concepts": ["ii-V-I", "ii-V-I in minor", "harmonic ambiguity", "modulation", "reharmonization"],
+    "context": "Begins ambiguously — the first chord (Em7b5 to A7) implies C minor before resolving to Bb major. The changes constantly shift between major and minor key centers. Bill Evans' harmonizations are masterclasses in chord voicing and reharmonization."
+  },
+  {
+    "song": "Night and Day",
+    "artist": "Cole Porter / Frank Sinatra",
+    "album": "",
+    "year": 1932,
+    "genre": "jazz",
+    "concepts": ["tritone relationship", "pedal point", "chromatic voice leading", "AABA form"],
+    "context": "The verse sits on a pedal note while the harmony shifts above it — a tritone away from the eventual tonic. Porter's harmonic language was ahead of its time. The resolution from the verse's pedal to the chorus tonic is deeply satisfying and theoretically elegant."
+  },
+  {
+    "song": "Body and Soul",
+    "artist": "Coleman Hawkins / Various",
+    "album": "",
+    "year": 1930,
+    "genre": "jazz",
+    "concepts": ["chromatic harmony", "ii-V-I", "enharmonic modulation", "bebop"],
+    "context": "The bridge modulates to a key a half step up using enharmonic equivalence — a move that influenced bebop harmony enormously. Coleman Hawkins' 1939 recording is widely considered the first bebop performance."
+  },
+  {
+    "song": "Impressions",
+    "artist": "John Coltrane",
+    "album": "Impressions",
+    "year": 1963,
+    "genre": "jazz",
+    "concepts": ["dorian mode", "modal jazz", "pentatonic improvisation", "motivic development"],
+    "context": "Essentially 'So What' reharmonized. D Dorian for the A section, Eb Dorian for the bridge. Coltrane's solo is a clinic in developing a short motif across a modal landscape — he'll take a 3-note idea and transform it for minutes at a time."
+  },
+  {
+    "song": "Oye Como Va",
+    "artist": "Tito Puente / Santana",
+    "album": "",
+    "year": 1963,
+    "genre": "latin jazz / rock",
+    "concepts": ["dorian mode", "montuno pattern", "minor 7th chords", "latin rhythm"],
+    "context": "A two-chord vamp: Am7 to D7. That's the Dorian mode signature — a minor chord with a major IV chord. The D7 (not Dm7) is what gives Dorian its brightness compared to natural minor. Santana's guitar tone on this track is pure Dorian pentatonic."
+  },
+  {
+    "song": "Scarborough Fair",
+    "artist": "Traditional / Simon & Garfunkel",
+    "album": "",
+    "year": "traditional",
+    "genre": "folk",
+    "concepts": ["dorian mode", "modal folk", "natural minor vs dorian"],
+    "context": "A clear example of Dorian mode in a folk context. The raised 6th degree is audible throughout the melody — it's what gives the song its slightly ancient, ambiguous quality. Compare it to a natural minor melody and the difference in color is immediately obvious."
+  },
+  {
+    "song": "Eleanor Rigby",
+    "artist": "The Beatles",
+    "album": "Revolver",
+    "year": 1966,
+    "genre": "rock",
+    "concepts": ["aeolian mode", "string quartet arrangement", "modal harmony", "no bass guitar"],
+    "context": "Pure Aeolian (natural minor). The string arrangement oscillates between Em and C, never resolving to a major chord. The absence of bass guitar and drums creates harmonic starkness. A beautiful example of how staying in a mode rather than using functional harmony creates a specific emotional color."
+  },
+  {
+    "song": "Norwegian Wood",
+    "artist": "The Beatles",
+    "album": "Rubber Soul",
+    "year": 1965,
+    "genre": "rock",
+    "concepts": ["mixolydian mode", "modal folk rock", "sitar", "ambiguous tonality"],
+    "context": "The verse sits in E Mixolydian — the flat 7th (D natural) keeps it from being fully major. The bridge shifts to minor but returns unresolved. Lennon was experimenting with Indian music's modal nature; the sitar reinforces the modal, non-functional harmony."
+  },
+  {
+    "song": "Sweet Home Chicago",
+    "artist": "Robert Johnson / Various",
+    "album": "",
+    "year": 1936,
+    "genre": "blues",
+    "concepts": ["12-bar blues", "I-IV-V", "dominant 7th chords", "blues turnaround", "shuffle rhythm"],
+    "context": "A foundational 12-bar blues in E. Every chord is a dominant 7th — even the I chord (E7), which creates constant tension that the form itself resolves through repetition rather than traditional harmonic resolution. The turnaround (last two bars) is a V-IV-I-V cycle."
+  },
+  {
+    "song": "Pride and Joy",
+    "artist": "Stevie Ray Vaughan",
+    "album": "Texas Flood",
+    "year": 1983,
+    "genre": "blues",
+    "concepts": ["minor pentatonic", "blues scale", "shuffle feel", "string bending", "call and response"],
+    "context": "SRV's guitar lines are pure minor pentatonic with blue notes (the b5) peppered in for that cry. The verse melody is a call-and-response between voice and guitar — the guitar answers every vocal phrase. Classic Texas blues shuffle with a driving, triplet-feel rhythm."
+  },
+  {
+    "song": "The Thrill Is Gone",
+    "artist": "B.B. King",
+    "album": "Completely Well",
+    "year": 1969,
+    "genre": "blues",
+    "concepts": ["minor blues", "minor pentatonic", "string bending", "vibrato", "B.B. King box"],
+    "context": "Minor blues rather than major — the changes are Bm7-Em7-F#m7 rather than the standard I7-IV7-V7. B.B. King's famous 'box' position in the minor pentatonic is all over this. Notice how he bends up to notes rather than playing them straight — that's the emotional core of blues guitar technique."
+  },
+  {
+    "song": "Hoochie Coochie Man",
+    "artist": "Muddy Waters",
+    "album": "",
+    "year": 1954,
+    "genre": "blues",
+    "concepts": ["stop time", "dominant 7th", "blues riff", "call and response", "Chicago blues"],
+    "context": "Built on a stop-time riff that gives the vocalist space to deliver lines. The harmonic motion is basic (E7) but the rhythmic structure is the teaching point — stop time means the band lays out while the soloist plays, then comes crashing back. Also a great example of the 'drone' approach to blues harmony."
+  },
+  {
+    "song": "Smoke on the Water",
+    "artist": "Deep Purple",
+    "album": "Machine Head",
+    "year": 1972,
+    "genre": "rock",
+    "concepts": ["minor pentatonic", "power chords", "parallel 4ths", "riff construction", "G minor"],
+    "context": "The famous riff uses parallel perfect 4ths moving through the G minor pentatonic scale. Not traditional power chords (perfect 5ths) but perfect 4ths — which gives it a slightly more angular, modern sound. The simplicity is the lesson: three notes, parallel motion, unforgettable."
+  },
+  {
+    "song": "Whole Lotta Love",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin II",
+    "year": 1969,
+    "genre": "rock",
+    "concepts": ["minor pentatonic", "blues rock", "riff construction", "E minor pentatonic"],
+    "context": "Page's riff is a pure E minor pentatonic statement. The one-note breakdown in the middle of the song (just E and a G) strips harmony to its bones, making the return of the full riff feel massive. A masterclass in tension and release through rhythmic and harmonic space."
+  },
+  {
+    "song": "Blackbird",
+    "artist": "The Beatles",
+    "album": "The White Album",
+    "year": 1968,
+    "genre": "rock",
+    "concepts": ["chromatic bass movement", "open chord voicings", "G major", "counterpoint", "folk fingerpicking"],
+    "context": "McCartney's left hand creates a chromatic walking bass line while his melody sits above it — two voices in counterpoint on one acoustic guitar. The chords aren't simple open shapes; they're voice-led by the bass movement. A beautiful example of how chromatic bass lines create forward motion."
+  },
+  {
+    "song": "Creep",
+    "artist": "Radiohead",
+    "album": "Pablo Honey",
+    "year": 1992,
+    "genre": "rock",
+    "concepts": ["borrowed chord", "modal interchange", "I-III-IV-iv", "major to minor iv"],
+    "context": "The progression G-B-C-Cm uses a major III chord (B major) borrowed from the parallel Mixolydian, then drops to a minor iv (Cm) — also borrowed, this time from the parallel minor. That Cm chord is the emotional gut-punch of the song. Modal interchange in its most visceral, accessible form."
+  },
+  {
+    "song": "Yesterday",
+    "artist": "The Beatles",
+    "album": "Help!",
+    "year": 1965,
+    "genre": "pop/rock",
+    "concepts": ["borrowed chord", "minor iv chord", "F major", "string quartet", "descending bass line"],
+    "context": "The progression moves from F major through a Bb minor/F (minor iv chord borrowed from parallel minor) to create a bittersweet quality. The bass descends chromatically under static harmony in the bridge. McCartney originally called it 'Scrambled Eggs' — the harmonic sophistication snuck in naturally."
+  },
+  {
+    "song": "Let It Be",
+    "artist": "The Beatles",
+    "album": "Let It Be",
+    "year": 1970,
+    "genre": "pop/rock",
+    "concepts": ["I-V-vi-IV", "gospel harmony", "major key", "piano ballad", "chord inversions"],
+    "context": "The I-V-vi-IV progression (C-G-Am-F) used as honestly and beautifully as it gets. The left hand's inversions — particularly the G/B — create a gentle stepwise bass line under the static right hand. Once you hear I-V-vi-IV, you hear it everywhere."
+  },
+  {
+    "song": "Africa",
+    "artist": "Toto",
+    "album": "Toto IV",
+    "year": 1982,
+    "genre": "pop/rock",
+    "concepts": ["polyrhythm", "I-V-vi-IV variant", "extended chords", "keyboard voicings"],
+    "context": "The intro drum pattern is in a 12/8 feel against a 4/4 chord sequence — a gentle polyrhythm. The chord changes use extensions (major 9ths, suspended chords) rather than plain triads, giving it a lush, orchestral quality even in a pop context."
+  },
+  {
+    "song": "With or Without You",
+    "artist": "U2",
+    "album": "The Joshua Tree",
+    "year": 1987,
+    "genre": "rock",
+    "concepts": ["I-V-vi-IV", "pedal point", "infinite guitar", "suspended resolution"],
+    "context": "The I-V-vi-IV loop (D-A-Bm-G) never resolves — it cycles indefinitely, which is exactly the emotional message. The bass pedals on D almost throughout while the chords shift above. The Edge's guitar adds sus4 notes that resolve to 3rds and back — constant, unresolved suspension."
+  },
+  {
+    "song": "Someone Like You",
+    "artist": "Adele",
+    "album": "21",
+    "year": 2011,
+    "genre": "pop",
+    "concepts": ["vi-IV-I-V", "arpeggiated piano", "emotional minor to major shift", "Alberti bass variant"],
+    "context": "The piano part is broken chords — not full chords, but individual notes in sequence (like an Alberti bass). The progression vi-IV-I-V (F#m-D-A-E) gives it a bittersweet major key with a minor starting point. The 'surprise' in this progression is that it starts on the vi and circles back to I — always returning, never fully arriving."
+  },
+  {
+    "song": "Don't Stop Believin'",
+    "artist": "Journey",
+    "album": "Escape",
+    "year": 1981,
+    "genre": "rock",
+    "concepts": ["I-V-vi-IV", "major key anthem", "piano intro", "ascending bass line"],
+    "context": "I-V-vi-IV (E-B-C#m-A) with an ascending stepwise piano intro that spells out the tonic chord. The bass line in the verse rises while the chords descend — contrary motion that creates momentum. A great example of how rhythmic and melodic treatment transform a simple progression."
+  },
+  {
+    "song": "Purple Haze",
+    "artist": "Jimi Hendrix",
+    "album": "Are You Experienced",
+    "year": 1967,
+    "genre": "rock",
+    "concepts": ["tritone interval", "blues scale", "chromatic riff", "E7#9 chord"],
+    "context": "The opening riff is built on the tritone interval (E to Bb) — the most dissonant interval in Western music. The famous E7#9 'Hendrix chord' contains both a major 3rd (G#) and a minor 3rd (G) simultaneously, creating deliberate tonal ambiguity. It's a dominant 7th chord with an augmented 9th — blues and major colliding."
+  },
+  {
+    "song": "Hotel California",
+    "artist": "Eagles",
+    "album": "Hotel California",
+    "year": 1977,
+    "genre": "rock",
+    "concepts": ["aeolian mode", "minor key", "Spanish tinge", "classical guitar influence", "descending bass line"],
+    "context": "Bm to F#7 is the key relationship — a minor i to a major V7 (from harmonic minor). The guitar solo is a two-part harmony between Felder and Walsh, structured almost classically. The chord sequence in the verse descends stepwise through natural minor with a borrowed V7 from harmonic minor."
+  },
+  {
+    "song": "Stairway to Heaven",
+    "artist": "Led Zeppelin",
+    "album": "Led Zeppelin IV",
+    "year": 1971,
+    "genre": "rock",
+    "concepts": ["chromatic descending bass", "Am to G", "borrowed chords", "dynamic structure", "minor pentatonic solo"],
+    "context": "The intro's chromatic descending bass line (A-G#-G-F#) under shifting chord colors is the harmonic engine. The piece builds from solo fingerpicked guitar to full band — a dynamic arc that's also a theory lesson in how texture and density create perceived harmonic weight."
+  },
+  {
+    "song": "Baba O'Riley",
+    "artist": "The Who",
+    "album": "Who's Next",
+    "year": 1971,
+    "genre": "rock",
+    "concepts": ["mixolydian mode", "synthesizer arpeggios", "F major in A mixolydian", "anthem rock"],
+    "context": "The opening synth is an arpeggio in F Mixolydian — the flat 7th (Eb) is prominent. The verse and chorus stay in this mode, giving it a vast, open-sky quality. Pete Townshend's minimalist synth pattern over Keith Moon's explosive drums is a dynamic masterclass."
+  },
+  {
+    "song": "Sweet Child O' Mine",
+    "artist": "Guns N' Roses",
+    "album": "Appetite for Destruction",
+    "year": 1987,
+    "genre": "rock",
+    "concepts": ["D major", "pentatonic melody", "arpeggiated riff", "skip-string arpeggios"],
+    "context": "Slash's intro is a skip-string arpeggio pattern — moving between non-adjacent strings — that outlines a D major chord. The 'mistake' in the pattern (the C# that makes it a major 7th) is intentional. The verse guitar shifts to a rhythmic D5 pattern while the solo is pure D minor pentatonic despite being in D major — a blues tension."
+  },
+  {
+    "song": "Under the Bridge",
+    "artist": "Red Hot Chili Peppers",
+    "album": "Blood Sugar Sex Magik",
+    "year": 1992,
+    "genre": "rock",
+    "concepts": ["D major", "key change", "Frusciante arpeggios", "E major to F major shift", "minor pentatonic"],
+    "context": "Starts in E major with a clean fingerpicked arpeggio, then the chorus shifts to F# minor. The bridge drops to A minor — a sudden modal shift that feels like falling. Frusciante's chord voicings are always open and ringing, letting notes blur together. The outro solo is E minor pentatonic over shifting harmony."
+  },
+  {
+    "song": "Superstition",
+    "artist": "Stevie Wonder",
+    "album": "Talking Book",
+    "year": 1972,
+    "genre": "funk/soul",
+    "concepts": ["minor pentatonic", "clavinet riff", "Eb minor", "syncopation", "funk groove"],
+    "context": "The clavinet riff is an Eb minor pentatonic statement — one of the most recognizable hooks in popular music. The harmonic movement is minimal (mostly tonic and flat VII), keeping the groove in focus. The syncopated rhythmic placement of the riff is as important as the notes themselves."
+  },
+  {
+    "song": "Isn't She Lovely",
+    "artist": "Stevie Wonder",
+    "album": "Songs in the Key of Life",
+    "year": 1976,
+    "genre": "soul/pop",
+    "concepts": ["E major", "harmonica key", "major pentatonic melody", "joyful major key"],
+    "context": "Pure major key joy. The harmonica melody is major pentatonic — the 4th and 7th are absent, keeping it bright and simple. Stevie's harmonica is in A but the song is in E, played with a 'cross harp' technique. A beautiful study in how major pentatonic melody creates an unambiguously happy emotional quality."
+  },
+  {
+    "song": "Billie Jean",
+    "artist": "Michael Jackson",
+    "album": "Thriller",
+    "year": 1982,
+    "genre": "pop/funk",
+    "concepts": ["bass line", "minor key groove", "chromatic bass movement", "F# minor", "syncopation"],
+    "context": "The bass line is the harmonic foundation — it moves chromatically in spots and defines the F# minor tonality more than the chords do. The chord progression is simple (F#m-B-E-A) but the bass line's rhythmic and melodic choices make it feel complex. The kick drum and bass are locked in perfect rhythmic union."
+  },
+  {
+    "song": "Watermelon Man",
+    "artist": "Herbie Hancock",
+    "album": "Head Hunters",
+    "year": 1962,
+    "genre": "jazz/funk",
+    "concepts": ["F blues", "pentatonic", "jazz blues", "funk groove", "melodic hook"],
+    "context": "A jazz blues in F, but Hancock's Head Hunters version transformed it with a funk groove and beer bottle intro that defines the Mixolydian/blues hybrid. The main riff is pure F blues scale. Great example of how the same harmonic structure sounds completely different at different tempos and feels."
+  },
+  {
+    "song": "What's Going On",
+    "artist": "Marvin Gaye",
+    "album": "What's Going On",
+    "year": 1971,
+    "genre": "soul",
+    "concepts": ["major 9th chords", "lush harmony", "Emaj9", "chord extensions", "layered vocals"],
+    "context": "Opens on an Emaj9 chord — a major triad with a major 7th and a 9th stacked on top. This lush, open sound defined the album's sophisticated harmonic palette. The polyrhythmic percussion and multi-tracked vocal harmonies create density without complexity. Chord extensions (9ths, 11ths) are what separate soul from simple pop."
+  },
+  {
+    "song": "Take Five",
+    "artist": "Dave Brubeck",
+    "album": "Time Out",
+    "year": 1959,
+    "genre": "jazz",
+    "concepts": ["5/4 time signature", "odd meter", "Eb minor", "pentatonic melody", "drum solo form"],
+    "context": "The most famous odd-meter jazz piece. The bass vamp (Ebm to Bbm7) cycles in 5/4 while Paul Desmond's alto saxophone melody sits comfortably on top. The key lesson: odd meters don't have to feel uncomfortable — Brubeck's vamp makes 5 feel as natural as 4."
+  },
+  {
+    "song": "Money",
+    "artist": "Pink Floyd",
+    "album": "The Dark Side of the Moon",
+    "year": 1973,
+    "genre": "rock",
+    "concepts": ["7/4 time signature", "odd meter", "B minor blues", "cash register sound design"],
+    "context": "The famous cash register/coins intro establishes a 7/4 rhythm before the bass riff enters — also in 7/4. The guitar solo switches to 4/4, creating a cross-rhythm effect. Pink Floyd's use of 7/4 feels natural because the bass riff is so strong and memorable."
+  },
+  {
+    "song": "A Day in the Life",
+    "artist": "The Beatles",
+    "album": "Sgt. Pepper's",
+    "year": 1967,
+    "genre": "rock",
+    "concepts": ["orchestral cluster", "tone cluster", "E major", "song within a song", "aleatoric music"],
+    "context": "The orchestral crescendo is a tone cluster — 40 musicians instructed to start on the lowest note of their instrument and go to the highest over 24 bars, as slowly as possible. The result is controlled noise. The final E major chord lasts 40+ seconds. Aleatory (chance-based) composition in a pop context."
+  },
+  {
+    "song": "Bohemian Rhapsody",
+    "artist": "Queen",
+    "album": "A Night at the Opera",
+    "year": 1975,
+    "genre": "rock",
+    "concepts": ["modulation", "operatic section", "chromatic harmony", "Neapolitan chord", "multi-section composition"],
+    "context": "Modulates through multiple key centers — Bb major in the ballad section, Eb major in the opera section, A major in the hard rock section. The Neapolitan chord (bII — a major chord built on the flattened second degree) appears in 'Galileo, Galileo, magnifico.' One of the most harmonically adventurous rock recordings ever made."
+  },
+  {
+    "song": "Riders on the Storm",
+    "artist": "The Doors",
+    "album": "L.A. Woman",
+    "year": 1971,
+    "genre": "rock",
+    "concepts": ["aeolian mode", "minor key", "organ voicings", "atmospheric texture", "E minor"],
+    "context": "Stays in E natural minor (Aeolian) throughout. Manzarek's electric piano left hand establishes the harmony while his right hand plays the melody — one musician filling the bass, harmony, and melody roles simultaneously. The rain and thunder sound design reinforces the modal, moody quality."
+  },
+  {
+    "song": "White Rabbit",
+    "artist": "Jefferson Airplane",
+    "album": "Surrealistic Pillow",
+    "year": 1967,
+    "genre": "rock/psychedelia",
+    "concepts": ["phrygian mode", "spanish tinge", "bolero rhythm", "half step resolution", "F# phrygian"],
+    "context": "Built on a bolero rhythm and the Phrygian mode — the flat 2nd gives it a Spanish/Moorish quality (influenced directly by Miles Davis's 'Sketches of Spain'). The song climaxes by resolving from the flat 2nd (G) up a half step to the tonic (F#). Phrygian's characteristic sound is that half-step resolution."
+  },
+  {
+    "song": "Round Midnight",
+    "artist": "Thelonious Monk / Miles Davis",
+    "album": "",
+    "year": 1944,
+    "genre": "jazz",
+    "concepts": ["diminished chords", "chromatic harmony", "Bb minor", "bebop", "reharmonization"],
+    "context": "Monk's harmonic language at its most personal — diminished chords used as passing chords, chromatic approach notes, unexpected resolutions. The A section descends through a cycle of diminished and dominant chords. Miles Davis's 1955 recording with the original quintet is the definitive version harmonically."
+  },
+  {
+    "song": "Caravan",
+    "artist": "Duke Ellington / Tito Puente versions",
+    "album": "",
+    "year": 1937,
+    "genre": "jazz",
+    "concepts": ["phrygian dominant", "exotic scales", "pedal point", "half diminished", "Spanish phrygian"],
+    "context": "The A section vamp sits on a Phrygian dominant scale (a Phrygian scale with a raised 3rd — the harmonic minor scale starting on its 5th degree). This gives it an 'exotic' Middle Eastern/Spanish quality. The B section is a conventional swing tune, making the contrast more dramatic."
+  },
+  {
+    "song": "My Favorite Things",
+    "artist": "John Coltrane",
+    "album": "My Favorite Things",
+    "year": 1960,
+    "genre": "jazz",
+    "concepts": ["modal jazz", "E minor / E major", "soprano saxophone", "pedal point improvisation"],
+    "context": "Coltrane took a waltz from a musical and transformed it into a modal vehicle. The A section is E Dorian, the B section shifts to E major. His improvisation stays on one tonal center for minutes at a time — exploring the mode rather than navigating changes. This album popularized the soprano saxophone in jazz."
+  },
+  {
+    "song": "Spain",
+    "artist": "Chick Corea",
+    "album": "Light as a Feather",
+    "year": 1972,
+    "genre": "jazz fusion",
+    "concepts": ["A major", "flamenco influence", "ii-V-I", "latin jazz", "Phrygian intro"],
+    "context": "Opens with a free rubato intro borrowed from Rodrigo's Concierto de Aranjuez — pure Phrygian. Then launches into a driving A major latin jazz piece. The contrast between the dark Phrygian intro and the bright A major main theme is one of the most effective key-color contrasts in jazz."
+  },
+  {
+    "song": "Cantaloupe Island",
+    "artist": "Herbie Hancock",
+    "album": "Empyrean Isles",
+    "year": 1964,
+    "genre": "jazz",
+    "concepts": ["blues scale", "minor 7th chords", "modal jazz", "Fm7", "hip hop sampling"],
+    "context": "A simple three-chord modal piece: Fm7 - Db7 - D7 - Fm7. The D7 is a tritone substitution for Ab7. Us3 famously sampled it for 'Cantaloop' in 1993. Harmonically simple but groove-forward — a reminder that rhythm and feel can carry a piece where harmony is minimal."
+  },
+  {
+    "song": "Pachelbel's Canon",
+    "artist": "Johann Pachelbel",
+    "album": "",
+    "year": "c. 1680",
+    "genre": "classical/baroque",
+    "concepts": ["I-V-vi-iii-IV-I-IV-V", "ground bass", "canon form", "D major", "baroque harmony"],
+    "context": "The ground bass (D-A-Bm-F#m-G-D-G-A) is the harmonic DNA of an enormous amount of Western pop music. Pachelbel's bass line repeats throughout while three violins play a canon above it. The I-V-vi-iii-IV-I-IV-V sequence moves through the key in a satisfying arc that always returns home."
+  },
+  {
+    "song": "Clair de Lune",
+    "artist": "Claude Debussy",
+    "album": "Suite bergamasque",
+    "year": 1905,
+    "genre": "classical/impressionism",
+    "concepts": ["whole tone scale", "impressionism", "extended harmony", "voice leading", "Db major"],
+    "context": "Debussy's impressionist approach treats chords as colors rather than functions. The whole tone scale appears in the middle section — a symmetrical scale with no leading tone, creating a floating, unresolved quality. Every chord voicing is chosen for its sonic texture, not its functional relationship to neighboring chords."
+  },
+  {
+    "song": "Gymnopédie No. 1",
+    "artist": "Erik Satie",
+    "album": "",
+    "year": 1888,
+    "genre": "classical",
+    "concepts": ["major 7th chords", "parallel harmony", "non-functional harmony", "ambient harmony"],
+    "context": "Satie moves between Gmaj7 and Dmaj7 in the verse — parallel major 7th chords with no functional relationship. This non-functional, parallel harmonic movement was radical in 1888 and directly influenced impressionism, jazz, and ambient music. Brian Eno cited Satie as a key influence."
+  }
+]
