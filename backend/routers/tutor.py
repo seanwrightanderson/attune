@@ -182,39 +182,43 @@ async def chat(
         full_response = ""
         tokens_used = 0
 
-        async for chunk in stream_tutor_response(
-            user_message=body.message,
-            conversation_history=history,
-            skill_level=session.skill_level.value,
-            topics_covered=topics_covered,
-            mode=body.mode,
-        ):
-            if isinstance(chunk, dict) and chunk.get("__done__"):
-                full_response = chunk["full_response"]
-                tokens_used = chunk["tokens_used"]
+        try:
+            async for chunk in stream_tutor_response(
+                user_message=body.message,
+                conversation_history=history,
+                skill_level=session.skill_level.value,
+                topics_covered=topics_covered,
+                mode=body.mode,
+            ):
+                if isinstance(chunk, dict) and chunk.get("__done__"):
+                    full_response = chunk["full_response"]
+                    tokens_used = chunk["tokens_used"]
 
-                # Detect new topics from the combined exchange
-                combined_text = body.message + " " + full_response
-                updated_topics = detect_topics(combined_text, topics_covered)
+                    # Detect new topics from the combined exchange
+                    combined_text = body.message + " " + full_response
+                    updated_topics = detect_topics(combined_text, topics_covered)
 
-                # Save assistant message to DB
-                assistant_msg = Message(
-                    session_id=session.id,
-                    role=MessageRole.assistant,
-                    content=full_response,
-                    tokens_used=tokens_used,
-                )
-                db.add(assistant_msg)
+                    # Save assistant message to DB
+                    assistant_msg = Message(
+                        session_id=session.id,
+                        role=MessageRole.assistant,
+                        content=full_response,
+                        tokens_used=tokens_used,
+                    )
+                    db.add(assistant_msg)
 
-                # Update topics on session
-                session.topics_covered = json.dumps(updated_topics)
-                await db.commit()
+                    # Update topics on session
+                    session.topics_covered = json.dumps(updated_topics)
+                    await db.commit()
 
-                # Send done event with updated topics
-                yield f"data: {json.dumps({'done': True, 'topics_covered': updated_topics})}\n\n"
-            else:
-                # Stream text chunk to client
-                yield f"data: {json.dumps({'text': chunk})}\n\n"
+                    # Send done event with updated topics
+                    yield f"data: {json.dumps({'done': True, 'topics_covered': updated_topics})}\n\n"
+                else:
+                    # Stream text chunk to client
+                    yield f"data: {json.dumps({'text': chunk})}\n\n"
+        except Exception as e:
+            print(f"[ERROR] stream_tutor_response failed: {e}", flush=True)
+            yield f"data: {json.dumps({'error': str(e)})}\n\n"
 
     return StreamingResponse(
         event_stream(),

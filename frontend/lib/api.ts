@@ -52,7 +52,10 @@ export async function streamChat(
           const data = line.slice(6).trim();
           try {
             const parsed = JSON.parse(data);
-            if (parsed.text) {
+            if (parsed.error) {
+              onError(`Tutor error: ${parsed.error}`);
+              return;
+            } else if (parsed.text) {
               fullResponse += parsed.text;
               onChunk(parsed.text);
             } else if (parsed.done) {
