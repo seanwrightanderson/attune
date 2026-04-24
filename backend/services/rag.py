@@ -1,39 +1,53 @@
 """
 RAG (Retrieval-Augmented Generation) service for Attune.
 
-Uses ChromaDB locally in development. To swap for Pinecone in production,
-replace the get_collection() function and the search() method.
+Uses a lightweight numpy-based vector store so there's no dependency on
+onnxruntime or libstdc++. All embeddings are produced by OpenAI.
 """
 
-from typing import Optional, List, Dict, Any
-import chromadb
-from chromadb.config import Settings as ChromaSettings
+from typing import Optional, List
+import json
+import os
+import numpy as np
+
 from services.embeddings import embed_text, embed_texts
 from config import get_settings
 
 settings = get_settings()
 
-COLLECTION_NAME = "attune_music_theory"
+STORE_FILE = os.path.join(settings.chroma_persist_dir, "store.json")
 
-_chroma_client = None
-
-
-def get_chroma_client() -> chromadb.ClientAPI:
-    global _chroma_client
-    if _chroma_client is None:
-        _chroma_client = chromadb.PersistentClient(
-            path=settings.chroma_persist_dir,
-            settings=ChromaSettings(anonymized_telemetry=False),
-        )
-    return _chroma_client
+# In-memory cache: list of {id, document, metadata, embedding}
+_store: Optional[List[dict]] = None
 
 
-def get_collection() -> chromadb.Collection:
-    client = get_chroma_client()
-    return client.get_or_create_collection(
-        name=COLLECTION_NAME,
-        metadata={"hnsw:space": "cosine"},
-    )
+def _load_store() -> List[dict]:
+    global _store
+    if _store is not None:
+        return _store
+    os.makedirs(settings.chroma_persist_dir, exist_ok=True)
+    if os.path.exists(STORE_FILE):
+        with open(STORE_FILE, "r") as f:
+            _store = json.load(f)
+    else:
+        _store = []
+    return _store
+
+
+def _save_store() -> None:
+    os.makedirs(settings.chroma_persist_dir, exist_ok=True)
+    with open(STORE_FILE, "w") as f:
+        json.dump(_store, f)
+
+
+def _cosine_similarity(a: List[float], b: List[float]) -> float:
+    va = np.array(a, dtype=np.float32)
+    vb = np.array(b, dtype=np.float32)
+    norm_a = np.linalg.norm(va)
+    norm_b = np.linalg.norm(vb)
+    if norm_a == 0 or norm_b == 0:
+        return 0.0
+    return float(np.dot(va, vb) / (norm_a * norm_b))
 
 
 async def add_documents(
@@ -42,15 +56,28 @@ async def add_documents(
     ids: List[str],
 ) -> None:
     """Embed and store documents in the vector store."""
-    embeddings = await embed_texts(documents)
-    collection = get_collection()
-    collection.add(
-        documents=documents,
-        embeddings=embeddings,
-        metadatas=metadatas,
-        ids=ids,
-    )
-    print(f"[RAG] Added {len(documents)} documents to collection.")
+    store = _load_store()
+
+    # Remove any existing entries with the same ids
+    existing_ids = {entry["id"] for entry in store}
+    new_docs = [
+        (doc, meta, doc_id)
+        for doc, meta, doc_id in zip(documents, metadatas, ids)
+        if doc_id not in existing_ids
+    ]
+
+    if not new_docs:
+        print("[RAG] All documents already in store, skipping.")
+        return
+
+    texts = [d[0] for d in new_docs]
+    embeddings = await embed_texts(texts)
+
+    for (doc, meta, doc_id), emb in zip(new_docs, embeddings):
+        store.append({"id": doc_id, "document": doc, "metadata": meta, "embedding": emb})
+
+    _save_store()
+    print(f"[RAG] Added {len(new_docs)} documents to store (total: {len(store)}).")
 
 
 async def search(
@@ -62,30 +89,37 @@ async def search(
     Semantic search over the knowledge base.
     Returns a list of dicts: {document, metadata, distance}
     """
+    store = _load_store()
+    if not store:
+        return []
+
     k = top_k or settings.rag_top_k
     query_embedding = await embed_text(query)
-    collection = get_collection()
 
-    kwargs = {
-        "query_embeddings": [query_embedding],
-        "n_results": k,
-        "include": ["documents", "metadatas", "distances"],
-    }
+    # Filter by metadata if requested
+    candidates = store
     if where:
-        kwargs["where"] = where
+        candidates = [
+            entry for entry in store
+            if all(entry["metadata"].get(key) == val for key, val in where.items())
+        ]
 
-    results = collection.query(**kwargs)
+    # Score all candidates
+    scored = [
+        (entry, _cosine_similarity(query_embedding, entry["embedding"]))
+        for entry in candidates
+    ]
+    scored.sort(key=lambda x: x[1], reverse=True)
 
-    output = []
-    for doc, meta, dist in zip(
-        results["documents"][0],
-        results["metadatas"][0],
-        results["distances"][0],
-    ):
-        output.append({"document": doc, "metadata": meta, "distance": dist})
-
-    return output
+    return [
+        {
+            "document": entry["document"],
+            "metadata": entry["metadata"],
+            "distance": 1.0 - score,  # cosine distance
+        }
+        for entry, score in scored[:k]
+    ]
 
 
 def collection_count() -> int:
-    return get_collection().count()
+    return len(_load_store())
