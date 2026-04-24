@@ -18,7 +18,8 @@ env/
 *.db
 *.sqlite
 *.sqlite3
-chroma_db/
+chroma_db/*.sqlite
+# store.json is committed so the knowledge base is baked into the Docker image
 
 # ── Node ─────────────────────────────────
 node_modules/
